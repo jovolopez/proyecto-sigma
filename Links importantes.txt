@@ -1,0 +1,3 @@
+background: rgb(242,87,148);
+background: linear-gradient(0deg, rgba(242,87,148,1) 1%, rgba(161,64,224,1) 100%);
+//Apliclandolo al body podría quedar espacio sin fondo. Si les pasa aumenten el alto del container a 100vh//
