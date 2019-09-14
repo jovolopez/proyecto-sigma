@@ -3,8 +3,8 @@
   padding: 0;
   box-sizing: border-box;
   list-style-type: none;
+  color: black;
 }
-
 body {
   font-size: 1.2em;
   font-family: 'Open Sans';
@@ -26,21 +26,17 @@ header {
   background: white;
   box-shadow: 2px 2px 10px #777;
 }
-
-h1 {
-  font-family: 'Open Sans';
+h1{
   font-weight: 400;
 }
-
-main{
-
+main {
   padding-top: 3em;
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-form{
+.regis-form {
   font-size: 16px;
   background: white;
   border-radius: 10px;
@@ -49,54 +45,69 @@ form{
   box-shadow: 2px 2px 10px #777;
 }
 hr{
-  margin: 10px 0;}
-
-
+  margin: 10px 0;
+}
 h2 {
   text-align: center;
   font-weight: 400;
   font-size: 1.5em;
 }
-
-input, textarea{
+input {
   border: solid 2px #eee;
   border-radius: 3px;
   width: 100%;
   height: 32px;
   padding: 10px;
   font-family: 'Open Sans';
-
 }
-textarea {
-min-height: 100px;
-max-height: 100px;
-max-width: 100%;
-min-width: 100%;
-
+.campo{
+  margin: 5px 0;
 }
-
-.Boton {
+.terms {
+  font-size: 12px;
+}
+#terms {
+  width: 14px;
+  height: 14px;
+  background: white;
+}
+.button {
   display: flex;
   justify-content: center;
 }
-
-#boton {
-  background-color: black;
+button{
+  background-color: white;
   padding: 10px;
-  color: white;
+  color: #777;
   border: solid 1px #bbb;
-    border-radius: 15px;
+  border-radius: 15px;
 }
-
-#boton:hover{
+button:hover{
+  background-color: #bbb;
+  color: white;
   cursor: pointer;
 }
-
+.nav-menu {
+    padding: 3px 0;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    font-size: 28px;
+    border-top: solid 1px gray;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: white;
+    box-shadow: 2px 2px 5px #777;
+}
 @media (min-width: 500px) {
-
-  form{
+  .regis-form {
     width: 450px;
     padding: 20px;
-  font-size: 1.1em;
+    font-size: 1.1em;
+  }
+  .campo {
+    margin: 15px 0;
   }
 }
