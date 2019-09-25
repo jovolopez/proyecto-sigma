@@ -9,12 +9,12 @@
   </head>
   <body>
     <header>
-      <a href="preguntas.html"><ion-icon name="arrow-back" size="large"></ion-icon></a>
+      <a href="preguntas.php"><ion-icon name="arrow-back" size="large"></ion-icon></a>
       <h1>Sigma</h1>
       <ion-icon name="ios-search" size="large"></ion-icon>
     </header>
           <main class="container">
-            <form class="contact-form" action="index.html" method="post">
+            <form class="contact-form" action="index.php" method="post">
               <h2>Contacto</h2>
               <hr size="1px" color="#ddd">
               <div class="Nombre">
@@ -40,10 +40,10 @@
           </main>
           <!-- NOTE: Inicio de barra de navegacion -->
           <div class="nav-menu">
-            <div><a href="home.html"><ion-icon class="nav-icon" name="home"></ion-icon></a></div>
-            <div><a href="list.html"><ion-icon class="nav-icon" name="list"></ion-icon></a></div>
-            <div><a href="cart.html"><ion-icon class="nav-icon" name="cart"></ion-icon></a></div>
-            <div><a href="perfil.html"><ion-icon class="nav-icon" name="person"></ion-icon></a></div>
+            <div><a href="home.php"><ion-icon class="nav-icon" name="home"></ion-icon></a></div>
+            <div><a href="list.php"><ion-icon class="nav-icon" name="list"></ion-icon></a></div>
+            <div><a href="cart.php"><ion-icon class="nav-icon" name="cart"></ion-icon></a></div>
+            <div><a href="perfil.php"><ion-icon class="nav-icon" name="person"></ion-icon></a></div>
           </div>
     <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
       </body>

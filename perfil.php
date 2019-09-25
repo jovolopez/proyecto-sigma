@@ -11,7 +11,7 @@
   </head>
   <body>
     <header>
-      <a href="preguntas.html"><ion-icon name="help-circle-outline" size="large" role="img" class="md icon-large hydrated" aria-label="Necesita ayuda?"></ion-icon></a>
+      <a href="preguntas.php"><ion-icon name="help-circle-outline" size="large" role="img" class="md icon-large hydrated" aria-label="Necesita ayuda?"></ion-icon></a>
       <h1>Sigma</h1>
       <ion-icon name="ios-search" size="large" role="img" class="md icon-large hydrated" aria-label="search"></ion-icon>
     </header>
@@ -26,9 +26,9 @@
     </div>
 
     <div class="sesion">
-      <a href="login.html"><b>Iniciar sesión</b></a>
+      <a href="login.php"><b>Iniciar sesión</b></a>
       <p>o</p>
-      <a href="registro.html"><b>Registrarse</b></a>
+      <a href="registro.php"><b>Registrarse</b></a>
     </div>
     <div class="opciones">
 
@@ -53,10 +53,10 @@
 
     <!-- NOTE: Inicio de barra de navegacion -->
     <div class="nav-menu">
-      <div><a href="home.html"><ion-icon class="nav-icon" name="home"></ion-icon></a></div>
-      <div><a href="list.html"><ion-icon class="nav-icon" name="list"></ion-icon></a></div>
-      <div><a href="cart.html"><ion-icon class="nav-icon" name="cart"></ion-icon></a></div>
-      <div><a href="perfil.html"><ion-icon class="nav-icon" name="person"></ion-icon></a></div>
+      <div><a href="home.php"><ion-icon class="nav-icon" name="home"></ion-icon></a></div>
+      <div><a href="list.php"><ion-icon class="nav-icon" name="list"></ion-icon></a></div>
+      <div><a href="cart.php"><ion-icon class="nav-icon" name="cart"></ion-icon></a></div>
+      <div><a href="perfil.php"><ion-icon class="nav-icon" name="person"></ion-icon></a></div>
     </div>
 
 
