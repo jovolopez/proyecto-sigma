@@ -20,6 +20,12 @@
     </div>
 
     <main class="container">
+      <div class="ordenar">
+        <a href="#">
+        <ion-icon name="list-box"></ion-icon>
+        <h3>Ver en lista</h3>
+        </a>
+      </div>
       <section class="productos">
         <article class="producto">
           <img src="img/macbook.jpg" alt="Macbook">
