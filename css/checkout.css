@@ -1,0 +1,62 @@
+.body {
+  background: linear-gradient(0deg, rgba(242,87,148,1) 1%, rgba(161,64,224,1) 100%);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+main {
+  width: 100vw;
+}
+
+.contenedor {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.carro {
+  margin-top: 3em;
+  display: flex;
+  border: solid black 1px;
+  width: 90%;
+}
+
+.productos {
+  width: 100%;
+  border: solid green 1px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.img-producto {
+  width: 40%;
+}
+
+.img-producto img{
+ width: 40%;
+ border: solid blue 1px;
+}
+
+.desc-producto {
+ border: solid red 1px;
+}
+
+.precio-producto {
+ border: solid orange 1px;
+}
+
+.total {
+
+}
+
+/* Formulario de Tarjeta de Crédito */
+/* Hide HTML5 Up and Down arrows. */
+input[type="number"]::-webkit-outer-spin-button, input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+/* END OF: Hide HTML5 Up and Down arrows. */
