@@ -31,6 +31,13 @@ body {
   width: 100%;
 }
 
+#banner {
+  border-radius: 5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-top: 1em;
+}
+
 main {
   display: flex;
   padding-top: 1em;
