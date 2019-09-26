@@ -43,7 +43,6 @@ body {
   background: #ededed;
 }
 .ordenar a{
-  color: #595959;
   display: flex;
   align-items: center;
   justify-content: space-around;

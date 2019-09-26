@@ -6,8 +6,8 @@
   list-style-type: none;
   text-decoration: none;
 }
-a{
-  color: black;
+a, ion-icon, h1{
+  color: #3e3a3a;
 }
 header {
   padding: 0 1em;

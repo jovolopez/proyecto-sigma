@@ -21,7 +21,7 @@
 
     <main class="container">
       <div class="ordenar">
-        <a href="#">
+        <a href="list.php">
         <ion-icon name="list-box"></ion-icon>
         <h3>Ver en lista</h3>
         </a>
