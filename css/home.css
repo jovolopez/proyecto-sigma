@@ -5,7 +5,7 @@ body {
 }
 
 .container {
-  width: 95%;
+  width: 97%;
   margin: 0 auto;
   padding-top: 1em;
 }
@@ -33,17 +33,6 @@ body {
 .banner-img img {
   width: 100%;
 }
-<<<<<<< HEAD
-
-#banner {
-  border-radius: 5px;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  padding-top: 1em;
-}
-
-main {
-=======
 .ordenar {
   width: 180px;
   margin: 10px;
@@ -54,7 +43,6 @@ main {
   background: #ededed;
 }
 .ordenar a{
->>>>>>> 89508196a5741cb7f23b4b28987d0ffedac5f64a
   display: flex;
   align-items: center;
   justify-content: space-around;

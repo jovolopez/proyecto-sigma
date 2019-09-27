@@ -43,47 +43,12 @@
         </article>
 
         <article class="producto">
-          <img src="img/macbook.jpg" alt="Macbook">
-          <h4>Lorem ipsum dolor</h4>
-        </article>
-
-        <div class="banner" id="banner">
-          <div class="banner-text">
-            <h2><b>Oferta!</b></h2>
-            <p>Haz click para saber más.</p>
-          </div>
-          <div class="banner-img">
-            <img src="img/iphone.png" alt="iPhone 11 de Oferta">
-          </div>
-        </div>
-
-        <article class="producto">
-          <img src="img/macbook.jpg" alt="Macbook">
-          <h4>Lorem ipsum dolor</h4>
-        </article>
-
-        <article class="producto">
-          <img src="img/macbook.jpg" alt="Macbook">
-          <h4>Lorem ipsum dolor</h4>
-        </article>
-
-        <article class="producto">
-          <img src="img/macbook.jpg" alt="Macbook">
-          <h4>Lorem ipsum dolor</h4>
-        </article>
-
-        <article class="producto">
           <img src="img/products.png" alt="">
           <h4>Ver más productos</h4>
         </article>
       </section>
     </main>
 
-
-    <!-- NOTE: Inicio de barra de navegacion -->
     <?php require_once("partials/nav-menu.php");?>
-
-
-  <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
   </body>
 </html>
