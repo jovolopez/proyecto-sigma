@@ -1,7 +1,7 @@
 <html lang="es" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Sigma - Home</title>
+    <title>Sigma - Producto</title>
     <link rel="stylesheet" href="css/master.css">
     <link rel="stylesheet" href="css/productos.css">
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900|Open+Sans:400,600,700&amp;display=swap" rel="stylesheet">
