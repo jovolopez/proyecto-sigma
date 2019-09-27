@@ -5,6 +5,7 @@ body {
   background: linear-gradient(0deg, rgba(242,87,148,1) 1%, rgba(161,64,224,1) 100%);
   background-size: cover;
   background-repeat: no-repeat;
+  height: auto;
 }
 .container {
   padding-top: 3em;
@@ -39,8 +40,7 @@ main {
 }
 
 .descripcion {
-  width: 100%;
-  
+  width: auto;
   text-align: center;
   border: solid #d4d4d4 1px;
   margin: 5px;
@@ -48,9 +48,38 @@ main {
   border-radius: 5px;
   padding: 5px;
 }
+
 h2 {
    width: auto;
    height: auto;
-   font-size: 30px;
+   font-size: 20px;
+}
 
+hr{
+  margin: 10px 0;}
+
+.precio {
+  padding-top: 5px;
+  text-align: left;
+}
+
+.list {
+  width: auto;
+  text-align:left;
+  border: solid #d4d4d4 1px;
+  margin: 5px;
+  background: white;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+h3 {
+  width: auto;
+  height: auto;
+  font-size: 15px;
+}
+
+li {
+  font-size: 15px;
+  padding-top: 5px;
 }
