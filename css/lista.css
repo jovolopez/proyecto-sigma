@@ -6,24 +6,31 @@ body{
   margin: auto;
   margin-top: 4em;
 }
+.productos {
+  background: white;
+  border-radius: 6px;
+  max-width: 500px;
+}
 .producto img {
   width: 120px;
+  margin-right: 5px;
   border-radius: 5px;
 }
 .producto{
   margin-bottom: 6px;
-  background: white;
-  border-radius: 6px;
   padding: 10px;
   display: flex;
-  justify-content: space-between;
+  border-bottom: solid 1px #ececec;
+}
+.producto .imagen-p{
+  display: inline-block;
+  padding: 0 10px;
 }
 .producto .info-p{
-  width: 64%;
-  background: white;
+  display: inline-block;
+  padding: 10px 0;
 }
 body {
-  font-size: 1.2em;
   font-family: 'Open Sans';
 }
 .ordenar {
@@ -37,4 +44,10 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-around;
+}
+label{
+  color: gray;
+}
+p {
+  font-size: 0.9em;
 }

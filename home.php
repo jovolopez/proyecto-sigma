@@ -47,7 +47,7 @@
           <p>Lorem ipsum dolor</p>
         </article>
 
-        <div class="banner" id="banner">
+        <div class="banner">
           <div class="banner-text">
             <h2><b>Oferta!</b></h2>
             <p>Haz click para saber más.</p>
