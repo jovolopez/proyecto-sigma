@@ -23,28 +23,28 @@
       <div class="ordenar">
         <a href="list.php">
         <ion-icon name="list-box"></ion-icon>
-        <h3>Ver en lista</h3>
+        <p>Ver en lista</p>
         </a>
       </div>
       <section class="productos">
         <article class="producto">
           <img src="img/macbook.jpg" alt="Macbook">
-          <h4>Lorem ipsum dolor</h4>
+          <p>Lorem ipsum dolor</p>
         </article>
 
         <article class="producto">
           <img src="img/macbook.jpg" alt="Macbook">
-          <h4>Lorem ipsum dolor</h4>
+          <p>Lorem ipsum dolor</p>
         </article>
 
         <article class="producto">
           <img src="img/macbook.jpg" alt="Macbook">
-          <h4>Lorem ipsum dolor</h4>
+          <p>Lorem ipsum dolor</p>
         </article>
 
         <article class="producto">
           <img src="img/macbook.jpg" alt="Macbook">
-          <h4>Lorem ipsum dolor</h4>
+          <p>Lorem ipsum dolor</p>
         </article>
 
         <div class="banner" id="banner">
@@ -59,22 +59,22 @@
 
         <article class="producto">
           <img src="img/macbook.jpg" alt="Macbook">
-          <h4>Lorem ipsum dolor</h4>
+          <p>Lorem ipsum dolor</p>
         </article>
 
         <article class="producto">
           <img src="img/macbook.jpg" alt="Macbook">
-          <h4>Lorem ipsum dolor</h4>
+          <p>Lorem ipsum dolor</p>
         </article>
 
         <article class="producto">
           <img src="img/macbook.jpg" alt="Macbook">
-          <h4>Lorem ipsum dolor</h4>
+          <p>Lorem ipsum dolor</p>
         </article>
 
         <article class="producto">
           <img src="img/products.png" alt="">
-          <h4>Ver más productos</h4>
+          <p>Ver más productos</p>
         </article>
       </section>
     </main>
