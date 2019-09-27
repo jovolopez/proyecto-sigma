@@ -51,7 +51,7 @@ body {
 .productos {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-between;
   align-content: space-around;
   margin-bottom: 2em;
 }
@@ -68,4 +68,14 @@ body {
 
 .producto img {
   width: 100%;
+  max-width: 200px;
+}
+@media (min-width: 600px) {
+  .container{
+    width: 85%;
+  }
+  .producto{
+    width: 23%;
+  }
+  .
 }
