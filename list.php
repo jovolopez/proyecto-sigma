@@ -17,7 +17,6 @@
           <a href="home.php">
             <ion-icon name="grid"></ion-icon>
           </a>
-
         </div>
         <div class="">
           <a href="list.php">
