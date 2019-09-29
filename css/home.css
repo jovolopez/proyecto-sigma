@@ -54,10 +54,12 @@ body {
   justify-content: space-between;
   align-content: space-around;
   margin-bottom: 2em;
+  width: 97%;
+  margin: auto;
 }
 
 .producto {
-  width: 48%;
+  width: 49.5%;
   padding: 8px;
   margin-bottom: 3px;
   text-align: center;
