@@ -11,8 +11,8 @@
     <?php require_once("partials/header.php");?>
 
     <main class="container">
-      <div class="productos">
-        <article class="producto">
+      <div class="articulos">
+        <article class="articulo">
           <img src="img/macbook.jpg" alt="Macbook">
 
         </article>
@@ -37,15 +37,64 @@
           <li>Procesador ts-edith de 4 nucleos y 2.4GHz</li>
           <li>Almacenamiento 1T SSD y 32Gb ram DDR3</li>
           <li>Graficos Intel Iris Plus Graphics 655</li>
-
         </ul>
 
         </div>
+
+        <div class="botones">
+          <div class="comprar">
+              <a href="checkout.php">
+                <input type="submit" id="comprar" value="Comprar">
+              </a>
+          </div>
+          <div class="carrito">
+              <input type="submit" value="Agregar al carrito">
+          </div>
+        </div>
+
+        <div class="banner">
+          <div class="banner-text">
+            <h2><b>Oferta!</b></h2>
+            <p>Haz click para saber más.</p>
+          </div>
+          <div class="banner-img">
+            <img src="img/iphone.png" alt="iPhone 11 de Oferta">
+          </div>
+        </div>
+
+        <section class="productos">
+          <article class="producto">
+            <a href="productos.php">
+              <img src="img/macbook.jpg" alt="Macbook">
+              <p>Macbook Infinity 2019</p>
+            </a>
+          </article>
+
+          <article class="producto">
+            <a href="productos.php">
+              <img src="img/macbook.jpg" alt="Macbook">
+              <p>Macbook Infinity 2019</p>
+            </a>
+          </article>
+
+          <article class="producto">
+            <a href="productos.php">
+              <img src="img/macbook.jpg" alt="Macbook">
+              <p>Macbook Infinity 2019</p>
+            </a>
+          </article>
+
+          <article class="producto">
+            <a href="productos.php">
+              <img src="img/macbook.jpg" alt="Macbook">
+              <p>Macbook Infinity 2019</p>
+            </a>
+          </article>
+
+
     </main>
         <!-- NOTE: Inicio de barra de navegacion -->
         <?php require_once("partials/nav-menu.php");?>
 
 
-  <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
-  </body>
 </html>

@@ -28,23 +28,31 @@
       </div>
       <section class="productos">
         <article class="producto">
-          <img src="img/macbook.jpg" alt="Macbook">
-          <p>Lorem ipsum dolor</p>
+          <a href="productos.php">
+            <img src="img/macbook.jpg" alt="Macbook">
+            <p>Macbook Infinity 2019</p>
+          </a>
         </article>
 
         <article class="producto">
-          <img src="img/macbook.jpg" alt="Macbook">
-          <p>Lorem ipsum dolor</p>
+          <a href="productos.php">
+            <img src="img/macbook.jpg" alt="Macbook">
+            <p>Macbook Infinity 2019</p>
+          </a>
         </article>
 
         <article class="producto">
-          <img src="img/macbook.jpg" alt="Macbook">
-          <p>Lorem ipsum dolor</p>
+          <a href="productos.php">
+            <img src="img/macbook.jpg" alt="Macbook">
+            <p>Macbook Infinity 2019</p>
+          </a>
         </article>
 
         <article class="producto">
-          <img src="img/macbook.jpg" alt="Macbook">
-          <p>Lorem ipsum dolor</p>
+          <a href="productos.php">
+            <img src="img/macbook.jpg" alt="Macbook">
+            <p>Macbook Infinity 2019</p>
+          </a>
         </article>
 
         <div class="banner">
@@ -58,18 +66,24 @@
         </div>
 
         <article class="producto">
-          <img src="img/macbook.jpg" alt="Macbook">
-          <p>Lorem ipsum dolor</p>
+          <a href="productos.php">
+            <img src="img/macbook.jpg" alt="Macbook">
+            <p>Macbook Infinity 2019</p>
+          </a>
         </article>
 
         <article class="producto">
-          <img src="img/macbook.jpg" alt="Macbook">
-          <p>Lorem ipsum dolor</p>
+          <a href="productos.php">
+            <img src="img/macbook.jpg" alt="Macbook">
+            <p>Macbook Infinity 2019</p>
+          </a>
         </article>
 
         <article class="producto">
-          <img src="img/macbook.jpg" alt="Macbook">
-          <p>Lorem ipsum dolor</p>
+          <a href="productos.php">
+            <img src="img/macbook.jpg" alt="Macbook">
+            <p>Macbook Infinity 2019</p>
+          </a>
         </article>
 
         <article class="producto">
