@@ -9,6 +9,7 @@
   </head>
   <body>
     <?php require_once("partials/header.php");?>
+    <main class="container">
     <div class="banner">
       <div class="banner-text">
         <h2><b>Oferta!</b></h2>
@@ -19,32 +20,75 @@
       </div>
     </div>
 
-    <main class="container">
       <div class="ordenar">
         <a href="list.php">
         <ion-icon name="list-box"></ion-icon>
-        <h3>Ver en lista</h3>
+        <p>Ver en lista</p>
         </a>
       </div>
       <section class="productos">
         <article class="producto">
-          <img src="img/macbook.jpg" alt="Macbook">
-          <h4>Lorem ipsum dolor</h4>
+          <a href="productos.php">
+            <img src="img/macbook.jpg" alt="Macbook">
+            <p>Macbook Infinity 2019</p>
+          </a>
         </article>
 
         <article class="producto">
-          <img src="img/macbook.jpg" alt="Macbook">
-          <h4>Lorem ipsum dolor</h4>
+          <a href="productos.php">
+            <img src="img/macbook.jpg" alt="Macbook">
+            <p>Macbook Infinity 2019</p>
+          </a>
         </article>
 
         <article class="producto">
-          <img src="img/macbook.jpg" alt="Macbook">
-          <h4>Lorem ipsum dolor</h4>
+          <a href="productos.php">
+            <img src="img/macbook.jpg" alt="Macbook">
+            <p>Macbook Infinity 2019</p>
+          </a>
+        </article>
+
+        <article class="producto">
+          <a href="productos.php">
+            <img src="img/macbook.jpg" alt="Macbook">
+            <p>Macbook Infinity 2019</p>
+          </a>
+        </article>
+
+        <div class="banner">
+          <div class="banner-text">
+            <h2><b>Oferta!</b></h2>
+            <p>Haz click para saber más.</p>
+          </div>
+          <div class="banner-img">
+            <img src="img/iphone.png" alt="iPhone 11 de Oferta">
+          </div>
+        </div>
+
+        <article class="producto">
+          <a href="productos.php">
+            <img src="img/macbook.jpg" alt="Macbook">
+            <p>Macbook Infinity 2019</p>
+          </a>
+        </article>
+
+        <article class="producto">
+          <a href="productos.php">
+            <img src="img/macbook.jpg" alt="Macbook">
+            <p>Macbook Infinity 2019</p>
+          </a>
+        </article>
+
+        <article class="producto">
+          <a href="productos.php">
+            <img src="img/macbook.jpg" alt="Macbook">
+            <p>Macbook Infinity 2019</p>
+          </a>
         </article>
 
         <article class="producto">
           <img src="img/products.png" alt="">
-          <h4>Ver más productos</h4>
+          <p>Ver más productos</p>
         </article>
       </section>
     </main>

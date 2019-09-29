@@ -13,10 +13,18 @@
 
     <main class="container">
       <div class="ordenar">
-        <a href="list.php">
-        <ion-icon name="list-box"></ion-icon>
-        <h3>Ver en cuadrícula</h3>
-        </a>
+        <div class="adsd">
+          <a href="home.php">
+            <ion-icon name="grid"></ion-icon>
+          </a>
+
+        </div>
+        <div class="">
+          <a href="list.php">
+            <ion-icon name="list-box"></ion-icon>
+          </a>
+
+        </div>
       </div>
       <section class="productos">
         <article class="producto">
@@ -24,7 +32,9 @@
             <img src="img/macbook.jpg" alt="Macbook">
           </div>
           <div class="info-p">
-            <h4>Lorem ipsum dolor</h4>
+            <p>Macbook i5 OFERTA DEL AÑO</p>
+            <p><b>1303$ ARS</b> 20%off</p>
+            <label for="">Buenos Aires</label>
           </div>
         </article>
 
@@ -33,7 +43,7 @@
             <img src="img/macbook.jpg" alt="Macbook">
           </div>
           <div class="info-p">
-            <h4>Lorem ipsum dolor</h4>
+            <p>Lorem ipsum dolor</p>
           </div>
         </article>
 
@@ -42,7 +52,7 @@
             <img src="img/macbook.jpg" alt="Macbook">
           </div>
           <div class="info-p">
-            <h4>Lorem ipsum dolor</h4>
+            <p>Lorem ipsum dolor</p>
           </div>
         </article>
 
@@ -51,7 +61,7 @@
             <img src="img/macbook.jpg" alt="Macbook">
           </div>
           <div class="info-p">
-            <h4>Ver más productos</h4>
+            <p>Ver más productos</p>
           </div>
         </article>
 

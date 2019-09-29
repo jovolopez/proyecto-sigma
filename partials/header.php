@@ -2,7 +2,7 @@
     <link rel="stylesheet" href="css/master.css">
   </head>
 <header>
-  <a href="#">
+  <a href="home.php">
     <ion-icon name="arrow-up" size="large" role="img" class="md icon-large hydrated" aria-label="arrow-up"></ion-icon>
   </a>
   <h1>Sigma</h1>
