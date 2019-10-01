@@ -1,62 +1,106 @@
-.body {
-  background: linear-gradient(0deg, rgba(242,87,148,1) 1%, rgba(161,64,224,1) 100%);
-  background-size: cover;
-  background-repeat: no-repeat;
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  list-style-type: none;
+  font-size: 18px;
 }
 
-main {
-  width: 100vw;
+html {
+	scroll-behavior: smooth;
 }
 
-.contenedor {
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  background-color: #F5F5F5;
+}
+
+.container {
   display: flex;
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
   align-items: center;
-  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.container h2 {
+  display: flex;
+  justify-content: center;
+  width: 90%;
+  padding: 2%;
+  margin-top: 1em;
+  color: #2e8ddb;
+  font-size: 28px;
 }
 
 .carro {
-  margin-top: 3em;
-  display: flex;
-  border: solid black 1px;
   width: 90%;
+  background-color: #ffffff;
+  border-radius: 2px;
+  border: solid #d9d9d9 1px;
 }
 
-.productos {
-  width: 100%;
-  border: solid green 1px;
+.producto {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-}
-
-.img-producto {
-  width: 40%;
-}
-
-.img-producto img{
- width: 40%;
- border: solid blue 1px;
-}
-
-.desc-producto {
- border: solid red 1px;
-}
-
-.precio-producto {
- border: solid orange 1px;
+  padding: 5%;
+  border-bottom: solid #d9d9d9 1px;
+  border-radius: 2px;
 }
 
 .total {
-
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5%;
+  border: solid #d9d9d9 1px;
+  border-radius: 2px;
 }
 
-/* Formulario de Tarjeta de Crédito */
-/* Hide HTML5 Up and Down arrows. */
-input[type="number"]::-webkit-outer-spin-button, input[type="number"]::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
+.checkout {
+  border-top: solid grey 1px;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 20px;
 }
-input[type="number"] {
-    -moz-appearance: textfield;
+
+#submit-button {
+  margin: 1em;
+  padding: 0.50em;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  background: #2e8ddb
 }
-/* END OF: Hide HTML5 Up and Down arrows. */
+
+.datos-de-envio {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.datos-de-envio input {
+  padding: 2%;
+  border: none;
+  border-bottom: solid #d9d9d9 1px;
+}
+
+.datos-tarjeta {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.datos-tarjeta input {
+  padding: 2%;
+  border: none;
+  border-bottom: solid #d9d9d9 1px;
+}
