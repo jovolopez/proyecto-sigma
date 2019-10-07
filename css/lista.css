@@ -2,12 +2,12 @@ body{
   background: #ececec;
 }
 .container{
-  width: 97%;
+  width: 98%;
   margin: 4em auto;
 }
 .productos {
   background: white;
-  border-radius: 6px;
+  border-radius: 3px;
   max-width: 500px;
 }
 .producto img {
@@ -19,6 +19,7 @@ body{
   margin-bottom: 6px;
   padding: 10px;
   display: flex;
+  justify-content: space-between;
   border-bottom: solid 1px #ececec;
 }
 .producto .imagen-p{
@@ -26,21 +27,46 @@ body{
   padding: 0 10px;
 }
 .producto .info-p{
+  width: 300px;
   display: inline-block;
   padding: 10px 0;
 }
-body {
+.titulo-p{
+  font-size: 14px;
+}
+body{
   font-family: 'Open Sans';
 }
-.ordenar {
+.opciones{
+  display: flex;
+  justify-content: space-between;
+  max-width: 500px;
+}
+.opcion{
+  width: 33.15%;
+  display: flex;
+  flex-flow: wrap;
+  justify-content: center;
+  align-items: center;
+  background: rgb(250,250,250);
+}
+.ordenar{
+  width: 60px;
   font-size: 20px;
   margin: 10px 0;
-  border: solid 1px #f0f0f0;
-  border-radius: 10px;
-  background: #f4f4f4;
   display: flex;
   align-items: center;
   justify-content: space-around;
+}
+.barra {
+  position: relative;
+  bottom: 2px;
+  font-size: 16px;
+  color: #c3c3c3;
+}
+.opt-text{
+  padding-right: 10px;
+  font-size: 14px;
 }
 label{
   color: gray;
