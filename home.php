@@ -92,7 +92,6 @@
         </article>
       </section>
     </main>
-
-    <?php require_once("partials/nav-menu.php");?>
   </body>
+      <?php require_once("partials/nav-menu.php");?>
 </html>

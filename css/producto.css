@@ -1,0 +1,186 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  list-style-type: none;
+  font-family: 'Open Sans', sans-serif;
+}
+
+body {
+  background-color: #F5F5F5;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.producto {
+  width: 95%;
+  margin-top: 3.2em;
+}
+
+.imagen {
+  background-color: white;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1em;
+  border: solid #d4d4d4 1px;
+  border-radius: 5px;
+}
+
+.imagen img {
+  width: 80%;
+  height: auto;
+}
+
+.descripcion {
+  background-color: white;
+  padding: 10px;
+  font-size: 1.2em;
+  margin-bottom: 1em;
+  border: solid #d4d4d4 1px;
+  border-radius: 5px;
+}
+
+.descripcion h2 {
+  display: flex;
+  justify-content: center;
+  border-bottom: solid #d4d4d4 1px;
+  padding-bottom: 0.4em;
+  margin-bottom: 0.4em;
+}
+
+.acciones {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5px;
+  border: solid #d4d4d4 1px;
+  border-radius: 5px;
+}
+
+#comprar {
+  background-color: black;
+  color: white;
+  width: 90%;
+  border: solid 2px #eee;
+  border-radius: 7px;
+  padding: 10px;
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+#agregar {
+  background-color: #cccbca;
+  color: black;
+  width: 90%;
+  border: solid 2px #eee;
+  border-radius: 7px;
+  padding: 10px;
+  font-size: 20px
+}
+
+.medios-de-pago {
+  display: none;
+}
+
+/* NOTE: Fin Seccion producto. Inicio productos rel. */
+
+.ver-mas {
+  width: 90%;
+  margin-top: 25px;
+}
+
+.ver-mas h3 {
+  display: flex;
+  justify-content: flex-start;
+  font-size: 1.5em;
+}
+
+.rel-productos {
+  border-radius: 20px;
+  margin-bottom: 3.2em;
+  margin-top: 1em;
+}
+
+section {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+section article {
+  margin: 1%;
+  border-radius: 10px;
+}
+
+.rel-producto {
+  background: linear-gradient(0deg, rgba(242,87,148,1) 1%, rgba(161,64,224,1) 100%);
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-size: 1.3em;
+  color: white;
+  width: 48%;
+}
+
+.rel-producto img {
+  width: 80%;
+  height: auto;
+}
+
+@media (min-width: 768px) {
+  .producto {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .imagen {
+    width: 49%;
+  }
+
+  .descripcion {
+    width: 49%;
+  }
+
+  .acciones {
+    width: 49%;
+    flex-direction: column;
+  }
+
+  .medios-de-pago {
+    display: inherit;
+    width: 49%;
+    height: auto;
+  }
+
+  .rel-productos {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  section {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .rel-producto {
+    width: 22%;
+    border-radius: 10px;
+    text-align: center;
+  }
+
+  .rel-producto img {
+    width: 80%;
+    height: auto;
+  }
+
+}

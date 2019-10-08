@@ -13,25 +13,27 @@ body {
   background: linear-gradient(0deg, rgba(242,87,148,1) 1%, rgba(161,64,224,1) 100%);
   width: 100%;
   margin: 1.5em 0;
-  overflow: hidden;
   display: flex;
+  justify-content: center;
   align-items: center;
-  justify-content: space-around;
   max-height: 300px;
+  margin-top: 1.6em;
 }
 
 .banner-text {
-  width: 40%;
-  padding-left: 5px;
+  width: 45%;
   color: white;
+  display: flex;
+  flex-direction: column;
 }
 
 .banner-img {
-  width: 50%;
+  width: 45%;
 }
 
 .banner-img img {
-  width: 100%;
+  width: 80%;
+  height: auto;
 }
 .ordenar {
   width: 120px;
@@ -51,33 +53,46 @@ body {
 .productos {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  align-content: space-around;
-  margin-bottom: 2em;
-  width: 97%;
-  margin: auto;
+  flex-direction: row;
+  width: 100%;
+  margin-bottom: 2.5em;
 }
 
 .producto {
-  width: 49.5%;
+  width: 48%;
   padding: 8px;
-  margin-bottom: 3px;
+  margin: 1%;
   text-align: center;
   border: solid #d4d4d4 1px;
   background: white;
-  border-radius: 5px;
+  border-radius: 10px;
 }
 
 .producto img {
   width: 100%;
   max-width: 200px;
 }
-@media (min-width: 600px) {
+
+@media (min-width: 768px) {
   .container{
     width: 85%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
+
   .producto{
     width: 23%;
   }
-  .
+
+  .banner {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .banner-img img {
+    width: 80%;
+    height: auto;
+  }
+
 }

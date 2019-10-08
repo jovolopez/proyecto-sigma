@@ -4,7 +4,6 @@
   box-sizing: border-box;
   font-family: sans-serif;
   list-style-type: none;
-  font-size: 18px;
 }
 
 html {
@@ -18,6 +17,7 @@ a {
 
 body {
   background-color: #F5F5F5;
+  font-size: 18px;
 }
 
 .container {
@@ -78,7 +78,8 @@ body {
   border-radius: 5px;
   border: none;
   color: white;
-  background: #2e8ddb
+  background: #2e8ddb;
+  margin-bottom: 3em;
 }
 
 .datos-de-envio {
@@ -103,4 +104,36 @@ body {
   padding: 2%;
   border: none;
   border-bottom: solid #d9d9d9 1px;
+}
+
+@media (min-width: 768px) {
+
+  .items {
+    display: flex;
+    width: auto;
+    height: auto;
+    flex-wrap: wrap;
+  }
+
+  .envio {
+    display: flex;
+    width: auto;
+    height: auto;
+    flex-wrap: wrap;
+  }
+
+  .tarjeta {
+    display: flex;
+    width: auto;
+    height: auto;
+    flex-wrap: wrap;
+  }
+
+  .carro {
+    width: 40%;
+  }
+
+  .total {
+
+  }
 }
