@@ -114,7 +114,7 @@ font-family: "Roboto", sans-serif;
   display: flex;
   justify-content: center;
 }
-@media (max-width:1024px) {
+@media (max-width:1023px) {
   .h-bar{
     display: none;
   }
@@ -126,9 +126,6 @@ font-family: "Roboto", sans-serif;
   }
 }
 @media (min-width:1024px) {
-  main{
-    padding-top: 2.5em;
-  }
   .container{
     max-width: 1200px;
   }

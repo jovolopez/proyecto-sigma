@@ -6,8 +6,7 @@ body {
   background-repeat: no-repeat;
 }
 main {
-  margin: 0 auto;
-  padding: 3.5em 0;
+  margin: 4.5em auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -76,6 +75,9 @@ button:hover{
   cursor: pointer;
 }
 @media (min-width: 500px) {
+  main{
+    margin-top: 5em;
+  }
   .regis-form {
     width: 450px;
     padding: 20px;
@@ -83,5 +85,10 @@ button:hover{
   }
   .campo {
     margin: 15px 0;
+  }
+}
+@media (min-width: 1024px) {
+  main{
+    margin-top: 6em;
   }
 }

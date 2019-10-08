@@ -1,74 +1,7 @@
 <?php
-//declaro variables
-$errores = [
-'errornombre' => "",
-'errorapellido' => "",
-'erroremail' => "",
-'errorpassword' => "",
-'errorterm' => ""
-];
-$error = false;
-$nombre = '';
-$apellido = '';
-$email = '';
-$password = '';
-$passrep = '';
-//validacion comienza
-if ($_POST) {
-  $nombre = trim($_POST["nombre"]);
-  $apellido = trim($_POST["apellido"]);
-  $email = trim($_POST["email"]);
-  $password = $_POST["password"];
-  $passrep = $_POST["rpass"];
-  if (strlen($nombre) < 2){
-    $errores['errornombre'] = "Escriba su nombre";
-    $nombre = '';
-    $error = true;
-  }
-  if (strlen($apellido) < 2) {
-    $errores['errorapellido'] = "Escriba su apellido";
-    $apellido = '';
-    $error = true;
-  }
-  if (strlen($email) == 0) {
-    $errores['erroremail'] = "Escriba un email";
-    $email = '';
-    $error = true;
-  } elseif (!filter_var($email, FILTER_VALIDATE_EMAIL)){
-    $errores['erroremail'] = "Escriba un email válido";
-    $email = '';
-    $error = true;
-  }
-  if (strlen($password) == 0){
-    $errores['errorpassword'] = "Escriba una contraseña";
-    $password = '';
-    $passrep = '';
-    $error = true;
-  } elseif (strlen($password) < 8) {
-    $errores['errorpassword'] = "Escriba una contraseña con al menos 8 caracteres";
-    $password = '';
-    $passrep = '';
-    $error = true;
-  } elseif ($password != $passrep) {
-    $errores['errorpassword'] = "Las contraseñas no coinciden";
-    $passrep = '';
-    $error = true;
-  }
-  if (empty($_POST["terms"])) {
-    $errores['errorterm'] = "Debe aceptar los terminos y condiciones";
-    $error = true;
-  }
-  //recorriendo e impriemiendo errores
-  function print_array($array){
-    echo '<div class="errores"><ul>';
-    foreach ($array as $value) {
-      if (strlen($value) > 0){
-        echo '<li>' . $value . '</li>';
-      }
-    }
-    echo '</ul></div>';
-  }
-}
+require_once('funciones/curl.php');
+require_once('funciones/usuarios.php');
+require_once('funciones/validacion.php');
 ?>
 <html lang="es" dir="ltr">
   <head>
@@ -85,7 +18,7 @@ if ($_POST) {
       <form class="regis-form" action="registro.php" method="post" enctype="multipart/form-data">
         <h2>Registro</h2>
         <hr size="1px" color="#ddd">
-          <?php if ($_POST){echo print_array($errores);}?>
+          <?php if ($_POST){echo print_errores($errores);}?>
         <div class="campo foto">
           <label for="foto">Suba una foto</label>
           <input type="file" name="foto" value="" id="foto">
