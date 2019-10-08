@@ -15,14 +15,44 @@ header {
   top: 0;
   left: 0;
   width: 100%;
-  border-bottom: solid 1px #d4d4d4;
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
   background: white;
-  box-shadow: 2px 2px 10px #777;
+  box-shadow: 0px 0px 15px 0px rgba(0,0,0,.20);
   z-index: 1;
 }
+.cont-head{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.cont-head-b{
+  display: none;
+}
+.h-bar{
+  display: flex;
+  flex-flow: nowrap;
+  justify-content: flex-end;
+  width: 25%;
+}
+.h-icontext{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 20px;
+}
+.h-top{
+  width: 25%;
+}
+.h-text{
+  padding-right: 10px;
+}
+.h-categorias{
+  display: none;
+}
+.h-busq-sm{
+  display: none;
+}
+
 h1{
   font-weight: 400;
 }
@@ -33,12 +63,11 @@ h1{
   left: 0;
   width: 100%;
   font-size: 28px;
-  border-top: solid 1px #d4d4d4;
   display: flex;
   justify-content: space-around;
   align-items: center;
   background: white;
-  box-shadow: 2px 2px 5px #777;
+  box-shadow: 0px 0px 15px 0px rgba(0,0,0,.20);
 }
 footer {
   background-color: black;
@@ -84,4 +113,56 @@ font-family: "Roboto", sans-serif;
   color: white;
   display: flex;
   justify-content: center;
+}
+@media (max-width:1024px) {
+  .h-bar{
+    display: none;
+  }
+  .h-busq-sm{
+    display: block;
+  }
+  .h-top{
+    width: auto;
+  }
+}
+@media (min-width:1024px) {
+  main{
+    padding-top: 2.5em;
+  }
+  .container{
+    max-width: 1200px;
+  }
+  .cont-head-b{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .form-busq{
+    font-size:24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .search{
+    width: 400px;
+    height: 25px;
+    margin: 5px 0;
+    background: #ececec;
+    border-radius: 10px;
+    border: 0px;
+  }
+  .busq-icon{
+    padding-left: 5px;
+  }
+  .h-categorias{
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    margin-right: 10px;
+  }
+  .nav-menu{
+    display: none;
+  }
 }
