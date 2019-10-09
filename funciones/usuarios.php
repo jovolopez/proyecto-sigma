@@ -33,7 +33,10 @@ function login($email, $password) {
   }
   if ($user) {
     if (password_verify($password, $user['password'])){
+      session_start();
       $_SESSION['email'] = $email;
+      $_SESSION['nombre'] = $user['nombre'];
+      $_SESSION['apellido'] = $user['apellido'];
       $_SESSION['avatar'] = $user['foto'];
       header('location:perfil.php');
     }

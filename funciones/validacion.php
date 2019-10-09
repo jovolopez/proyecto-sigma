@@ -116,7 +116,7 @@ if ($_POST) {
     crear_usuario($usuario);
     //$usuario = peticionCurl('http://apiusers.juancarlosdh.dhalumnos.com/api/users', 'POST', $datos);
     if (isset($_POST["recuer"])){
-      login($email);
+      login($email, $password);
     }
 
   }

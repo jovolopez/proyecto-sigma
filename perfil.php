@@ -1,4 +1,5 @@
-
+<?php require_once('funciones/usuarios.php');
+session_start(); ?>
 <html lang="es" dir="ltr">
   <head>
     <meta charset="utf-8">
@@ -19,17 +20,25 @@
         <img src="img/profile.png" alt="Perfil">
       </div>
       <div class="banner-text">
-        <h2>Peter Parker</h2>
+        <h2><?php if (comprobar_logeo() == true) {
+          echo $_SESSION['nombre'] . ' ' . $_SESSION['apellido'];
+        } else {
+          echo "No iniciaste sesion aún";
+        } ?></h2>
       </div>
     </div>
-
-    <div class="sesion">
+<?php if (comprobar_logeo() == true) {
+  echo '<div class="sesion">
+      <a href="logout.php"><b>Logout</b></a>
+    </div>';
+} else {
+  echo '<div class="sesion">
       <a href="login.php"><b>Iniciar sesión</b></a>
       <p>o</p>
       <a href="registro.php"><b>Registrarse</b></a>
-    </div>
+    </div>';
+} ?>
     <div class="opciones">
-
       <div class="opcion">
         <ion-icon class="icon" name="card"></ion-icon>
         <p>Datos de pago</p>
