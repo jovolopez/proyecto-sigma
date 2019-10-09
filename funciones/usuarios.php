@@ -6,44 +6,44 @@ function cargar_foto($archivo, $nombre, $ext) {
     $nombrecomp = $nombre . '.' . $ext;
     move_uploaded_file($archivo, 'usuarios/fotos/' . $nombrecomp);
 }
-function buscarUsuarioEmail(string $email) {
-    $archivo = file_get_contents('database/usuarios.json');
-    $usuarios = json_decode($archivo, true);
-    foreach ($usuarios as $usuario) {
-        if ($usuario['email'] == $email) {
-            return $usuario;
-        }
-    }
-    return [];
-}
-function guardarUsuario(array $usuario) {
-    if (!file_exists('database')) {
+function crear_usuario($usuario) {
+    if (file_exists('database') == false) {
         mkdir('database');
     }
-    //me traigo el archivo entero
-    $archivo = file_get_contents('database/usuarios.json');
-    $usuarios = json_decode($archivo, true);
-
-    $usuarios[] = $usuario;
-    $usuariosJson = json_encode($usuarios);
-    file_put_contents('database/usuarios.json', $usuariosJson);
+    $base = file_get_contents('database/usuarios.json');
+    $arrayusers = json_decode($base, true); //true porque todavía no la trabajamos como objeto
+    $arrayusers[] = $usuario;
+    $jsonusers = json_encode($arrayusers);
+    file_put_contents('database/usuarios.json', $jsonusers);
 }
-function estaElUsuarioLogeado() {
-    if (isset($_SESSION['email'])) {
-        return true;
+function busca_users($email){
+  $base = file_get_contents('database/usuarios.json');
+  $arrayusers = json_decode($base, true);
+  foreach ($arrayusers as $user) {
+    if ($user['email'] == $email) {
+      return $user;
     }
-    return false;
+  }
+  return '';
 }
-function logear($email) {
-    //deberia de buscar al usuario en la BD
-    $usuario = buscarUsuarioEmail($email);
-    if ($usuario) {
-     //si existe lo logeo
-        $_SESSION['email'] = $email;
-        $_SESSION['avatar'] = $usuario['avatar'];
-    } else {
-        destruirRecuerdame();
-        //sino lo redirijo a login
-        header('location:login.php');
+function login($email, $password) {
+  $user = busca_users($email);
+  if (isset($_POST["recuer"])){
+    setcookie('recordar', $email, time() + 60*60*24*7);
+  }
+  if ($user) {
+    if (password_verify($password, $user['password'])){
+      $_SESSION['email'] = $email;
+      $_SESSION['avatar'] = $user['foto'];
+      header('location:perfil.php');
     }
+  } else {
+      header('location:login.php');
+  }
+}
+function comprobar_logeo() {
+  if (isset($_SESSION['email'])) {
+    return true;
+  }
+  return false;
 }

@@ -44,6 +44,9 @@ if ($_POST) {
     $error = true;
   }
 
+  if ($error == false) {
+    login($email, $password);
+  }
 }
 
 

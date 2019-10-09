@@ -113,11 +113,10 @@ if ($_POST) {
     'password' => $passhash,
     'foto' => $fotoname];
     //mandamos los datos a la base de datos
-    guardarUsuario($usuario);
+    crear_usuario($usuario);
     //$usuario = peticionCurl('http://apiusers.juancarlosdh.dhalumnos.com/api/users', 'POST', $datos);
     if (isset($_POST["recuer"])){
-      logear($email);
-      setcookie('recordar', $email, time() + 60*60*24*7);
+      login($email);
     }
 
   }

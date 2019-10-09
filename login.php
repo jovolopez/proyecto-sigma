@@ -19,12 +19,12 @@ require_once('funciones/validacion-login.php');
         <hr size="1px" color="#ddd">
           <?php if ($_POST){echo print_errores($errores);}?>
         <div class="campo mail">
-          <label for="mail">Email</label>
-          <input type="email" name="mail" id="mail" placeholder="Email">
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" placeholder="Email">
         </div>
         <div class="campo pass">
-          <label for="pass">Contraseña</label>
-          <input type="password" name="pass" id="pass" placeholder="Contraseña">
+          <label for="password">Contraseña</label>
+          <input type="password" name="password" id="password" placeholder="Contraseña">
         </div>
         <div class="campo remem">
           <input type="checkbox" name="remem" id="remem" value="y">
