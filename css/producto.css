@@ -139,6 +139,7 @@ section article {
     justify-content: space-between;
     flex-direction: row;
     flex-wrap: wrap;
+    margin-top: 6em;
   }
 
   .imagen {

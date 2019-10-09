@@ -1,18 +1,17 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
   font-size: 1.2em;
   font-family: 'Open Sans';
 }
-.sesion{
-  width: 200px;
-  position: fixed;
-  top: 40vh;
-  left: 23%;
-  text-align: center;
-  z-index: 1;
-  background: #ddd;
-  border-radius: 50px;
-  opacity: 0.8;
+
+.container {
+  display: flex;
+  align-items: center;
 }
+
 .banner {
   background: linear-gradient(0deg, rgba(242,87,148,1) 1%, rgba(161,64,224,1) 100%);
   width: 100%;
@@ -42,8 +41,20 @@ body {
   border-radius: 50%;
 }
 
+.sesion{
+  width: 200px;
+  text-align: center;
+  z-index: 1;
+  background: #ddd;
+  border-radius: 50px;
+  opacity: 0.8;
+  align-items: center;
+  margin: 1em;
+}
+
 .opciones {
   padding: 1em;
+  width: 100%;
 }
 .opcion .icon{
   margin-right: 5px;
@@ -55,5 +66,42 @@ body {
 .opcion {
   width: 100%;
   display: flex;
-  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+}
+
+@media (min-width: 768px) {
+
+  .container {
+    display: inherit;
+    width: 100%;
+  }
+
+  .banner {
+    margin-top: 3em;
+    width: 100vw;
+    max-height: 20vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .banner img {
+    width: auto;
+    height: 100%;
+    padding: 10px;
+  }
+
+  .banner-text {
+    width: auto;
+  }
+
+  .sesion {
+    width: 30%;
+  }
+
+  .opciones{
+    width: 50%;
+
+  }
+
 }

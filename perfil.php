@@ -13,6 +13,7 @@
   <body>
   <?php require_once("partials/header.php");?>
 
+  <div class="container">
     <div class="banner">
       <div class="banner-img">
         <img src="img/profile.png" alt="Perfil">
@@ -29,27 +30,28 @@
     </div>
     <div class="opciones">
 
-        <div class="opcion">
-          <ion-icon class="icon" name="card"></ion-icon>
-          <p>Datos de pago</p>
-        </div>
-        <div class="opcion">
-          <ion-icon class="icon" name="home"></ion-icon>
-          <p>Datos de envío</p>
-        </div>
-        <div class="opcion">
-          <ion-icon class="icon" name="cube"></ion-icon>
-          <p>Estados de mis pedidos</p>
-        </div>
-        <div class="opcion">
-          <ion-icon class="icon" name="key"></ion-icon>
-          <p>Cambiar contraseña</p>
-        </div>
+      <div class="opcion">
+        <ion-icon class="icon" name="card"></ion-icon>
+        <p>Datos de pago</p>
+      </div>
+      <div class="opcion">
+        <ion-icon class="icon" name="home"></ion-icon>
+        <p>Datos de envío</p>
+      </div>
+      <div class="opcion">
+        <ion-icon class="icon" name="cube"></ion-icon>
+        <p>Estados de mis pedidos</p>
+      </div>
+      <div class="opcion">
+        <ion-icon class="icon" name="key"></ion-icon>
+        <p>Cambiar contraseña</p>
+      </div>
 
     </div>
+  </div>
 
-    <!-- NOTE: Inicio de barra de navegacion -->
-    <?php require_once("partials/nav-menu.php");?>
+  <!-- NOTE: Inicio de barra de navegacion -->
+  <?php require_once("partials/nav-menu.php");?>
 
 
   <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>

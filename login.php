@@ -1,19 +1,23 @@
-
+<?php
+require_once('funciones/curl.php');
+require_once('funciones/usuarios.php');
+require_once('funciones/validacion-login.php');
+?>
 <html lang="es" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="css/master.css">
     <link rel="stylesheet" href="css/login.css">
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900|Open+Sans:400,600,700&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulario Registro</title>
+    <title>Iniciar Sesión - Sigma</title>
   </head>
   <body>
     <?php require_once("partials/header.php");?>
     <main class="container">
-      <form class="login-form" action="validar.php" method="post">
+      <form class="login-form" action="login.php" method="post">
         <h2>Iniciar sesión</h2>
         <hr size="1px" color="#ddd">
+          <?php if ($_POST){echo print_errores($errores);}?>
         <div class="campo mail">
           <label for="mail">Email</label>
           <input type="email" name="mail" id="mail" placeholder="Email">

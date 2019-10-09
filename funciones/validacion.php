@@ -122,3 +122,6 @@ if ($_POST) {
 
   }
 }
+
+
+// NOTE: Validador de LOGIN.
