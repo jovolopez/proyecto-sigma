@@ -65,4 +65,5 @@
 
   <?php include_once("partials/nav-menu.php") ?>
   </body>
+  <?php require_once("partials/footer.php");?>
 </html>

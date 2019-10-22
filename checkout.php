@@ -119,5 +119,6 @@
 
     </main>
     <?php require_once("./partials/nav-menu.php") ?>
+    <?php require_once("partials/footer.php");?>
   </body>
 </html>

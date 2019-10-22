@@ -4,8 +4,13 @@
   box-sizing: border-box;
 }
 
+footer a {
+  text-decoration: none;
+  color: white;
+}
+
 footer {
-  background-color: black;
+  background-color: #312C2B;
   padding-top: 20px;
   padding-bottom: 20px;
   padding-right: 40px;
@@ -27,25 +32,104 @@ footer {
   list-style-type: none;
 }
 
-.der form input .button {
-font-family: "Roboto", sans-serif;
+.center ion-icon {
+  font-size: 3em;
+  color: white;
+}
+
+.izq {
+  width: 33.33%;
+}
+
+.center {
+  width: 33.33%;
+}
+
+.der {
+  width: 33.33%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.der form {
+  width: auto;
+}
+
+.der button {
+  font-family: "Roboto", sans-serif;
   text-transform: uppercase;
   outline: 0;
   background: #4CAF50;
-  width: 100%;
   border: 0;
-  padding: 15px;
+  padding: 2px;
   color: #FFFFFF;
   font-size: 14px;
   -webkit-transition: all 0.3 ease;
   transition: all 0.3 ease;
   cursor: pointer;
 }
-.button:hover,.form button:active,.form button:focus {
-  background: #43A047;
+
+.der button:hover {
+  background: green;
+}
 
 .copyright {
+  margin-top: 1em;
+  padding-top: 1em;
   color: white;
-  display: flex;
-  justify-content: center;
+  width: 100%;
+  border-top: solid gray 1px;
+  text-align: center;
+}
+
+@media (max-width: 1023px) {
+  footer {
+    padding-bottom: 4em;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .bg-cont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .izq {
+    width: 100%;
+    text-align: center;
+  }
+
+  .izq h3 {
+    padding-bottom: 1em;
+    font-size: 1.5em;
+  }
+
+  .izq ul li {
+    text-transform: uppercase;
+    font-size: 1em;
+    padding-bottom: 3px;
+  }
+
+  .center {
+    width: 100%;
+    text-align: center;
+  }
+
+  .center h3 {
+    padding-top: 1em;
+    padding-bottom: 1em;
+    font-size: 1.5em;
+  }
+
+  .center ion-icon {
+    font-size: 2em;
+  }
+
+  .der {
+    display: none;
+  }
+
 }

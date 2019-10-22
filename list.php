@@ -104,4 +104,5 @@
     <?php require_once("partials/nav-menu.php");?>
   <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
   </body>
+  <?php require_once("partials/footer.php");?>
 </html>
