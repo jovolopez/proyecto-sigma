@@ -1,7 +1,12 @@
 <?php
-require_once('funciones/curl.php');
 require_once('funciones/usuarios.php');
-require_once('funciones/validacion-login.php');
+require_once('funciones/Validador.php');
+
+if ($_POST) {
+  $validador = new Validador;
+  $verif = $validador->validarLogin($_POST["email"], $_POST["password"]);
+}
+
 ?>
 <html lang="es" dir="ltr">
   <head>
@@ -17,11 +22,21 @@ require_once('funciones/validacion-login.php');
       <form class="login-form" action="login.php" method="post">
         <h2>Iniciar sesión</h2>
         <hr size="1px" color="#ddd">
-          <?php if ($_POST){echo print_errores($errores);}?>
+          <?php //Validamos que exista en el array "erroremail" para imprimirlos.
+              if($_POST){
+                echo ($verif[1]['erroremail']) ?? "";
+              }
+          ?>
         <div class="campo mail">
           <label for="email">Email</label>
-          <input type="email" name="email" id="email" placeholder="Email">
+          <input type="email" name="email" id="email" placeholder="Email" value="<?php if ($_POST){echo $verif[0];
+          };?>">
         </div>
+        <?php //Validamos que exista en el array "erroremail" para imprimirlos.
+          if($_POST){
+            echo ($verif[1]['errorpassword']) ?? "";
+          }
+        ?>
         <div class="campo pass">
           <label for="password">Contraseña</label>
           <input type="password" name="password" id="password" placeholder="Contraseña">

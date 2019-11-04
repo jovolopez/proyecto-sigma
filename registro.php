@@ -1,7 +1,5 @@
 <?php
-require_once('funciones/curl.php');
-require_once('funciones/usuarios.php');
-require_once('funciones/validacion.php');
+require_once('funciones/autoload.php');
 ?>
 <html lang="es" dir="ltr">
   <head>
