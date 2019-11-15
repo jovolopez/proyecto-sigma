@@ -2,39 +2,44 @@
 
 class Validador {
 
-  public function validarLogin(){
+  public $bd;
 
-      $email = trim($_POST['email']);
-      $password = $_POST['password'];
+  public function __construct() {
+    $this->bd = new BaseDatos;
+  }
 
-      if (strlen($email) == 0) {
-        $errores['erroremail'] = "Escriba un email";
-        $email = '';
-        $error = true;
-      } elseif (!filter_var($email, FILTER_VALIDATE_EMAIL)){
-        $errores['erroremail'] = "Escriba un email válido";
-        $email = '';
-        $error = true;
+  public function validarLogin($email, $password){
+
+    $email = trim($email);
+
+    if (strlen($email) == 0) {
+      $errores['erroremail'] = "Escriba un email";
+    } elseif (!filter_var($email, FILTER_VALIDATE_EMAIL)){
+      $errores['erroremail'] = "Escriba un email válido";
+    }
+
+    if (strlen($password) == 0){
+      $errores['errorpassword'] = "Escriba una contraseña";
+    } elseif (strlen($password) < 8) {
+      $errores['errorpassword'] = "Escriba una contraseña con al menos 8 caracteres";
+    }
+
+    if (!isset($errores)) {
+
+      $usuario = $this->bd->buscarUsuario($email);
+      if ($usuario == null) {
+        $errores['erroremail'] = "Email o contraseña incorrectos";
+        return $errores;
+      } elseif (!password_verify($password, $usuario->getPass())) {
+        $errores['erroremail'] = "Email o contraseña incorrectos";
+      } else {
+        $this->bd->logear($usuario);
       }
 
-      if (strlen($password) == 0){
-        $errores['errorpassword'] = "Escriba una contraseña";
-        $password = '';
-        $passrep = '';
-        $error = true;
-      } elseif (strlen($password) < 8) {
-        $errores['errorpassword'] = "Escriba una contraseña con al menos 8 caracteres";
-        $password = '';
-        $passrep = '';
-        $error = true;
-      }
+    } else {
+      return $errores;
+    }
 
-      if ($error == false) {
-        login($email, $password);
-      }
-      else {
-        return [$email, $errores];
-      }
   }
 
   public function validarRegistro(){

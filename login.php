@@ -1,10 +1,12 @@
 <?php
 require_once('funciones/usuarios.php');
+require_once('funciones/BaseDatos.php');
+require_once('funciones/Autenticador.php');
 require_once('funciones/Validador.php');
 
 if ($_POST) {
   $validador = new Validador;
-  $verif = $validador->validarLogin($_POST["email"], $_POST["password"]);
+  $errores = $validador->validarLogin($_POST["email"], $_POST["password"]);
 }
 
 ?>
@@ -22,19 +24,22 @@ if ($_POST) {
       <form class="login-form" action="login.php" method="post">
         <h2>Iniciar sesión</h2>
         <hr size="1px" color="#ddd">
-          <?php //Validamos que exista en el array "erroremail" para imprimirlos.
+          <?php //Imprimimos errores del email si existen
               if($_POST){
-                echo ($verif[1]['erroremail']) ?? "";
+                echo ($errores['erroremail']) ?? "";
               }
           ?>
         <div class="campo mail">
           <label for="email">Email</label>
-          <input type="email" name="email" id="email" placeholder="Email" value="<?php if ($_POST){echo $verif[0];
-          };?>">
+          <input type="email" name="email" id="email" placeholder="Email" value="
+          <?php //Si no hay errores PERSISTIMOS EL EMAIL
+          if ($_POST && !isset($errores['erroremail'])) {
+            echo $_POST["email"];
+          }?>">
         </div>
-        <?php //Validamos que exista en el array "erroremail" para imprimirlos.
+        <?php //Imprimimos errores del password si existen
           if($_POST){
-            echo ($verif[1]['errorpassword']) ?? "";
+            echo ($errores['errorpassword']) ?? "";
           }
         ?>
         <div class="campo pass">
